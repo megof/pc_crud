@@ -1,4 +1,4 @@
-package com.Gems.pc_crud.Products;
+package com.Gems.pc_crud.core.products;
 
 import jakarta.persistence.*;
 
@@ -16,7 +16,7 @@ public class Product {
     private LocalDateTime updated;
     private LocalDateTime created;
     private Long user;
-    private Boolean isActive;
+    private Boolean isActive = true;
 
     public Product() {
     }

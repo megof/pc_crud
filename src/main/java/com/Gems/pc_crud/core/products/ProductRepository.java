@@ -1,4 +1,4 @@
-package com.Gems.pc_crud.Products;
+package com.Gems.pc_crud.core.products;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

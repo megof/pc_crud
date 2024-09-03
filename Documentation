@@ -1,66 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.Gems</groupId>
-	<artifactId>pc_crud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>pc_crud</name>
-	<description>Demo project for Spring Boot</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
-	<dependencies>
+/Documentation
+<!--Dependencias:
+<dependencies>
+        <!-Proporciona soporte para la Java Persistence API y facilita la interacción con las bases de datos relacionales->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+        <!--Herramientas necesarias para aplicacionesweb, contiene MVC, Tomcat embebido->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+        <!--Proporciona dependencias apra pruebas, JUnit, Spring test, AssertJ->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--JWT-->
+		<!--JWT->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+        <!--Proporciona sistema de autenticación y autorización->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-
+        <!--Biblioteca que reduce el código boilerplate, genera get,set, constructores etc->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -88,15 +62,34 @@
 			<version>0.11.5</version>
 			<scope>runtime</scope>
 		</dependency>
-		<!---->
+		<!-- ->
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+-->
+<!--Path:
+    -core
+        -entities*
+            -entity
+            -repository
+            --role
+    -modules
+        -entities*
+            -controller
+            -service
+    -security
+        -auth
+            -controller
+            -request
+            -response
+            -service
+            -login
+            -register
+        -config
+            -aplication
+            -security
+        -jwt
+            -filter
+            -service
 
-</project>
+-->
+<!--API:
+-->

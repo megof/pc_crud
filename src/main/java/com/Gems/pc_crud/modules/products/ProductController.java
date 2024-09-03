@@ -1,8 +1,10 @@
-package com.Gems.pc_crud.Products;
+package com.Gems.pc_crud.modules.products;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.Gems.pc_crud.core.products.Product;
 
 import java.util.List;
 

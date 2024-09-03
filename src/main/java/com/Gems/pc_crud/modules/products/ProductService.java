@@ -1,12 +1,15 @@
-package com.Gems.pc_crud.Products;
+package com.Gems.pc_crud.modules.products;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.GetMapping;
 
-import java.time.LocalDateTime;
+import com.Gems.pc_crud.core.products.Product;
+import com.Gems.pc_crud.core.products.ProductRepository;
+
+//import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
@@ -68,7 +71,6 @@ public class ProductService {
         }
         productrepository.deleteById(id);
 
-        datos.put("data", datos);
         datos.put("messsage", "Este sí se eliminó :)");
         return new ResponseEntity<>(
                 datos,
